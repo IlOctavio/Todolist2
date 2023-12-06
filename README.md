@@ -8,14 +8,14 @@ Proyecto realizado en Vue.js con MongoDB y autenticación mediante Firebase.
 ```
 npm install
 ```
-
 ### Compiles and hot-reloads for development
 ```
 npm run serve
+
 ```
-
-username: upso@upso.com
-password: 123456
-
-
-
+###Start the server by navigating to the same directory
+```
+node app.js
+```
+###Start the MongoDB database server.
+ 
