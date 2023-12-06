@@ -16,9 +16,5 @@ username: upso@upso.com
 password: 123456
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-
 
 
