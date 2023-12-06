@@ -1,7 +1,7 @@
 <template>
-  <div class="container my-4">
+  <div class="container my-4  bg-info-subtle text-emphasis-info rounded font-monospace">
     <div class="row justify-content-center">
-      <div class="col-md-6">
+      <div class="col-md-6 ">
         <button class="btn btn-primary m-2" @click="mostrarLoginForm = true">
           Iniciar Sesión
         </button>
@@ -20,7 +20,7 @@
               v-model="email"
             />
           </div>
-          <div class="form-group">
+          <div class="form-group ">
             <label for="passwordLogin">Contraseña</label>
             <input
               type="password"

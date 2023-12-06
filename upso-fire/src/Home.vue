@@ -1,6 +1,6 @@
 <template>
-  <div class="container mt-5">
-    <h2 class="mb-4">LISTA DE TAREAS</h2>
+  <div class="container mt-5 bg-info-subtle text-emphasis-info rounded font-monospace">
+    <h2 class="mb-4 fst-italic  ">Lista de Tareas</h2>
 
     <ul class="list-group">
       <li
@@ -13,13 +13,13 @@
         <div>
           <button
             @click="($event) => editarTarea(tarea._id)"
-            class="btn btn-primary btn-sm mr-2"
+            class="btn btn-primary btn-sm  rounded-start-pill"
           >
             Editar
           </button>
           <button
             @click="($event) => confirmarBorrado(tarea._id, tarea.titulo)"
-            class="btn btn-danger btn-sm"
+            class="btn btn-danger btn-sm  rounded-end-pill"
           >
             Borrar
           </button>
@@ -56,29 +56,28 @@
         <input
           v-model="tareaEditada.completado"
           id="TareaEditadaCompletado"
-          class="form-check-input"
-          type="checkbox"
+          type="checkbox" class="btn-check"
         />
-        <label class="form-check-label" for="TareaEditadaCompletado"
+        <label class="btn  btn btn-outline-secondary mt-2" for="TareaEditadaCompletado"
           >Realizada
         </label>
       </div>
       <button
         @click="($event) => actualizarTarea()"
-        class="btn btn-success mt-2"
+        class="btn btn-primary mt-2 rounded-start-2"
       >
         Guardar cambios
       </button>
       <button
         @click="($event) => cancelarEdicion(tareaEditada.titulo)"
-        class="btn btn-danger mt-2"
+        class="btn btn-danger mt-2 rounded-start-2"
       >
         Cancelar
       </button>
     </div>
 
     <div class="mt-4">
-      <h3>Nueva Tarea</h3>
+      <h3 class="fst-italic ">Nueva Tarea</h3>
       <div class="form-group">
         <label for="nuevaTareaTitulo">Título</label>
         <input
@@ -102,12 +101,12 @@
           type="date"
         />
       </div>
-      <button @click="($event) => crearTarea()" class="btn btn-primary mt-2">
+      <button @click="($event) => crearTarea()" class="btn btn-primary mt-2  rounded-start-2">
         Crear Tarea
       </button>
     </div>
 
-    <button @click="($event) => cerrarSesion()" class="btn btn-danger mt-5">
+    <button @click="($event) => cerrarSesion()" class="btn btn-danger mt-4 rounded-start-2">
       Cerrar Sesión
     </button>
   </div>
@@ -380,4 +379,7 @@ export default class HelloWorld extends Vue {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+
+
+</style>
