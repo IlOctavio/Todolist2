@@ -1,5 +1,6 @@
 # Todolist2
- lawea
+ 
+Proyecto realizado en Vue.js con MongoDB y autenticación mediante Firebase.
 
 
 
